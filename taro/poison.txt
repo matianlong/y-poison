@@ -9,7 +9,7 @@
         <view class="point" :class="currentIndex==index?'active':null" v-for="(item, index) in list" :key="index"></view>
       </view>
 </view>
-
+  
 return {
     list:[
      'img'
