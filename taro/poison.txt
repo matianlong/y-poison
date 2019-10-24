@@ -1,2 +1,23 @@
-taro 
-react native
+Ğ¡³ÌĞòÂÖ²¥Í¼
+ <view class="bn-banner">
+      <swiper circular="true" autoplay="true" @change="getSwiper">
+        <swiper-item v-for="(item, index) in list" :key="index">
+          <image :src="item"/>
+        </swiper-item>
+      </swiper>
+      <view class="points">
+        <view class="point" :class="currentIndex==index?'active':null" v-for="(item, index) in list" :key="index"></view>
+      </view>
+</view>
+
+return {
+    list:[
+     'img'
+    ],
+    currentIndex: 0
+}
+methods: {
+    getSwiper(e){
+        this.currentIndex = e.mp.detail.current
+    }
+}
