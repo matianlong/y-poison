@@ -10,7 +10,7 @@
       </view>
 </view>
   
-return {
+return { 
     list:[
      'img'
     ],
