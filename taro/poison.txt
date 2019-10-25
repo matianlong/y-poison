@@ -1,4 +1,4 @@
-С�����ֲ�ͼ
+小程序轮播图
  <view class="bn-banner">
       <swiper circular="true" autoplay="true" @change="getSwiper">
         <swiper-item v-for="(item, index) in list" :key="index">
