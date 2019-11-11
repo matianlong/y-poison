@@ -1,4 +1,4 @@
-Ð¡³ÌÐòÂÖ²¥Í¼
+ è½®æ’­å›¾
  <view class="bn-banner">
       <swiper circular="true" autoplay="true" @change="getSwiper">
         <swiper-item v-for="(item, index) in list" :key="index">
