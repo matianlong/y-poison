@@ -21,3 +21,27 @@ methods: {
         this.currentIndex = e.mp.detail.current
     }
 }
+
+
+//小程序目录navigator
+<view class="page_hd" v-if="isActive">
+   <template v-for="(modelItem, index1) in currentPages">
+       <view class="weui-cells__title">{{modelItem.model}}</view>
+         <view class="weui-cells">
+           <template v-for="(page, index2) in modelItem.pages">
+             <navigator class="weui-cell weui-cell__access" :class="{'not-allow':page.src.length<1}" :url="page.src">
+               <view class="weui-cell__bd">{{page.name}}</view>
+               <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+             </navigator>
+           </template>
+         </view>
+   </template>
+ </view>
+ 
+ let currentPages = [
+  {
+    model: '首页',
+    pages: [
+      {name: '', src: '/pages//main'},
+    ]
+  },
