@@ -47,7 +47,14 @@ methods: {
   },
   
   //跳转页面
-  <navigator url="/pages//main" class="">
+  <navigator url="/pages//main" class="">人间不值得</navigator>
   
-   </navigator>
+  <a href="/page//main?id=1">
+  
+  <span @click="openTest">打开test页面</span>
+   methods: {
+      openTest () {
+          wx.navigateTo({url: '/page//main?id=1'})
+      }
+   }
   
