@@ -45,3 +45,9 @@ methods: {
       {name: '', src: '/pages//main'},
     ]
   },
+  
+  //跳转页面
+  <navigator url="/pages//main" class="">
+  
+   </navigator>
+  
