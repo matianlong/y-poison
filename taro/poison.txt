@@ -59,6 +59,6 @@ methods: {
    }
   
   //tab切换
-  <view class="medical " @click="cur=0" :class="{ border:cur==0 }">关注的医生</view>
-  <view class="number" @click="cur=1" :class="{ border:cur==1 }">放号提醒医生</view>
+  <view class="medical " @click="cur=0" :class="{ border:cur==0 }">w</view>
+  <view class="number" @click="cur=1" :class="{ border:cur==1 }">q</view>
   <view class="user-doctor-container healthlist-wrap" v-show="cur==0">
