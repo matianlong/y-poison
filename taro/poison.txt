@@ -62,3 +62,10 @@ methods: {
   <view class="medical " @click="cur=0" :class="{ border:cur==0 }">w</view>
   <view class="number" @click="cur=1" :class="{ border:cur==1 }">q</view>
   <view class="user-doctor-container healthlist-wrap" v-show="cur==0">
+  
+  //js点击是生效一次
+  oBtn.onclick = function() {            
+            console.log('123')
+            oBtn.onclick = null;
+  }
+  https://blog.csdn.net/qq_39985511/article/details/89852669
