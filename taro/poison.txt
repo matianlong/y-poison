@@ -2,7 +2,7 @@
  <view class="bn-banner">
       <swiper circular="true" autoplay="true" @change="getSwiper">
         <swiper-item v-for="(item, index) in list" :key="index">
-          <image :src="item"/>
+          <image :src="item.url"/>
         </swiper-item>
       </swiper>
       <view class="points">
@@ -12,7 +12,7 @@
   
 return { 
     list:[
-     'img'
+     {url: ''}
     ],
     currentIndex: 0
 }
